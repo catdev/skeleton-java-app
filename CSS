@@ -1,7 +1,64 @@
+
+BUTTON RED 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id1">My Heading 1</h1>
+
+<button type="button"
+onclick="document.getElementById('id1').style.color = 'red'">
+Click Me!</button>
+
+</body>
+</html>
+
+GRID ROW 
 gridRow {
     border: 1px solid black;
 }
 
 .cell {
     border: 1px solid black;
+}
+#grid {
+  display: grid;
+  height: 200px;
+  grid-template-columns: 200px;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#item1 {
+  background-color: lime;
+}
+
+#item2 {
+  background-color: yellow;
+  grid-row: 2 / 4;
+}
+
+#item3 {
+  background-color: blue;
+  grid-row: span 2 / 7;
+}
+
+#grid {
+  display: grid;
+  height: 200px;
+  grid-template-columns: 200px;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#item1 {
+  background-color: white;
+}
+
+#item2 {
+  background-color: white;
+  grid-row: 2 / 4;
+}
+
+#item3 {
+  background-color: white;
+  grid-row: span 2 / 7;
 }
